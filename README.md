@@ -1,15 +1,15 @@
-# FiberMyWay - Interface Telnet para Router
+# FiberMyWay - Interface Telnet para FGW 🛜
 
-**FiberMyWay** é uma interface gráfica desenvolvida em Python que se conecta a um **FiberGateway** via **Telnet** para buscar e exibir informações do router, com o objetivo de facilitar a visualização e interação com os dados da rede.
+**FiberMyWay** é uma interface gráfica desenvolvida em Python que se conecta ao seu router **FiberGateway** via **Telnet** para "pesquisar" e exibir informações do router, com o objetivo de facilitar a visualização e interação com os dados da rede.
 
-## Funcionalidades
+## Funcionalidades 🛠️
 
-- Conexão via **Telnet** para buscar informações do **FiberGateway**.
+- Conexão via **Telnet** para exibir informações do **FiberGateway**.
 - Interface gráfica simples e intuitiva utilizando o **CustomTkinter**.
-- Suporte para login com nome de usuário e senha.
+- Login com nome de usuário e senha definidos no FGW, default é meo/meo
 - Exibição de resultados obtidos após a execução de comandos Telnet.
 
-## Como Funciona
+## Como Funciona 🤔
 
 1. O programa inicia uma conexão **Telnet** com o **FiberGateway** (IP: `192.168.1.254` e porta `23`).
 2. O usuário insere o nome de usuário e a senha para realizar o login no dispositivo.
@@ -17,18 +17,18 @@
 4. As informações são processadas e exibidas na interface gráfica.
 5. Se houver falha no login ou na comunicação com o dispositivo, mensagens de erro são exibidas.
 
-## Requisitos
+## Requisitos 📜
 
 - Python 3.x
 - Bibliotecas necessárias:
-  - `customtkinter` (para a interface gráfica)
-  - `pillow` (para processamento de imagens)
-  - `requests` (para baixar imagens)
-  - `prettytable` (para exibir as tabelas)
-  - `telnetlib` (para comunicação via Telnet)
-  - `queue` (para gerenciar os resultados assíncronos)
+  - `customtkinter` (interface gráfica)
+  - `pillow` (processamento de imagens)
+  - `requests` (baixa as imagens da internet)
+  - `prettytable` (exibe as tabelas)
+  - `telnetlib` (comunica via Telnet)
+  - `queue` (gerencia os resultados assíncronos)
 
-## Instalação
+## Instalação 🖥️
 
 1. Clone o repositório:
    git clone https://github.com/G4brielPT/fgw_telnet_gui.git
@@ -37,20 +37,20 @@
    cd fgw_telnet_gui
 
 3. Instale as dependências:
-   pip install -r requirements.txt
+   Nenhuma ação é necessária (as dependencias são instaladas automaticamente)
 
-## Como Usar
+## Como Usar 🤷‍♂️
 
 1. Execute o aplicativo:
    python main.py
 
-2. A interface gráfica será exibida, e você será solicitado a inserir o nome de usuário e a senha do **FiberGateway**.
+2. A interface gráfica será exibida, introduza as credenciais do seu **FiberGateway**.
 
 3. Após o login bem-sucedido, os dados obtidos a partir dos comandos Telnet serão exibidos na interface.
 
 4. Caso ocorra algum erro, mensagens informativas aparecerão na tela.
 
-## Estrutura do Código
+## Estrutura do Código 👨‍💻
 
 - **verificar_python**: Verifica se o Python está instalado no sistema.
 - **verificar_pacote_instalado**: Verifica se os pacotes necessários estão instalados.
