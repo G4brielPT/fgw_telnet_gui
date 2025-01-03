@@ -42,7 +42,7 @@
 ## Como Usar 🤷‍♂️
 
 1. Execute o aplicativo:
-   python main.py
+   python app.py
 
 2. A interface gráfica será exibida, introduza as credenciais do seu **FiberGateway**.
 
